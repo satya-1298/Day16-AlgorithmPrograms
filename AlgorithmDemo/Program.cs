@@ -16,6 +16,7 @@ namespace AlgorithmDemo
                 Console.WriteLine("****************************");
                 Console.WriteLine("1-Two Strings are Equal or not");
                 Console.WriteLine("2-InsertionSort");
+                Console.WriteLine("3-BubbleSort");
                 Console.WriteLine("****************************");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option) 
@@ -29,6 +30,13 @@ namespace AlgorithmDemo
                         InsertionSort sort = new InsertionSort();
                         sort.Display();
                         Console.WriteLine("****************************");
+                        break;
+                    case 3:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.Display();
+                        Console.WriteLine("****************************");
+                        break;
+                    default: Console.WriteLine("Invalid option");
                         break;
                 }
             }
