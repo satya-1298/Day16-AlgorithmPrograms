@@ -19,6 +19,7 @@ namespace AlgorithmDemo
                 Console.WriteLine("2-InsertionSort");
                 Console.WriteLine("3-BubbleSort");
                 Console.WriteLine("4-Merge Sort");
+                Console.WriteLine("5-Anagram");
                 Console.WriteLine("****************************");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option) 
@@ -48,6 +49,11 @@ namespace AlgorithmDemo
                         {
                             Console.WriteLine(i);
                         }
+                        Console.WriteLine("******************************");
+                        break;
+                    case 5:
+                        Anagram anagram = new Anagram();
+                        anagram.Check();
                         Console.WriteLine("******************************");
                         break;
                     default: Console.WriteLine("Invalid option");
