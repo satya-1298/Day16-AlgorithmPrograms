@@ -20,6 +20,7 @@ namespace AlgorithmDemo
                 Console.WriteLine("3-BubbleSort");
                 Console.WriteLine("4-Merge Sort");
                 Console.WriteLine("5-Anagram");
+                Console.WriteLine("6-PrimeNumbers");
                 Console.WriteLine("****************************");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option) 
@@ -54,6 +55,11 @@ namespace AlgorithmDemo
                     case 5:
                         Anagram anagram = new Anagram();
                         anagram.Check();
+                        Console.WriteLine("******************************");
+                        break;
+                    case 6:
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.Display();
                         Console.WriteLine("******************************");
                         break;
                     default: Console.WriteLine("Invalid option");
