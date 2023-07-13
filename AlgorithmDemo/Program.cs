@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace AlgorithmDemo
 {
@@ -17,6 +18,7 @@ namespace AlgorithmDemo
                 Console.WriteLine("1-Two Strings are Equal or not");
                 Console.WriteLine("2-InsertionSort");
                 Console.WriteLine("3-BubbleSort");
+                Console.WriteLine("4-Merge Sort");
                 Console.WriteLine("****************************");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option) 
@@ -35,6 +37,18 @@ namespace AlgorithmDemo
                         BubbleSort bubbleSort = new BubbleSort();
                         bubbleSort.Display();
                         Console.WriteLine("****************************");
+                        break;
+                    case 4:
+                        int[] num = new int[] { 5, 77, 3, 7, 19, 36, 11 };
+                        int len = num.Length;   
+                        MergeSort mergeSort = new MergeSort();
+                        mergeSort.SortMethod(num, 0, len - 1);
+                        Console.WriteLine("Sorted list is ");
+                        foreach(int i in num)
+                        {
+                            Console.WriteLine(i);
+                        }
+                        Console.WriteLine("******************************");
                         break;
                     default: Console.WriteLine("Invalid option");
                         break;
