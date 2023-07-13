@@ -25,7 +25,9 @@ namespace AlgorithmDemo
                     {
                         counter++;
                         break;
+                        Console.WriteLine("\n");
                     }
+
                 }
 
                 if (counter == 0 && i != 1)
